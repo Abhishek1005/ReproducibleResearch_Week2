@@ -5,7 +5,7 @@ date: "24/10/2021"
 output: pdf_document
 ---
 
-```{r setup, include=FALSE}
+```{r setup}
 library(ggplot2)
 data <- read.csv("activity.csv")
 total.steps <- tapply(data$steps, data$date, FUN=sum, na.rm=TRUE)
